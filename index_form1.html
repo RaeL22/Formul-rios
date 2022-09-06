@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style_form1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+</head>
+<body>
+    <header>
+        <div class="container-menu">
+            <img src="../portifolio/img" alt="Logo">
+            <ul>
+                <li>Form-1</li>
+                <li>Form-2</li>
+                <li>Form-3</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container-form">
+            <form action="" method="post">   <!-- agrupar componentes -->
+                <h4>Inputs mais Usados</h4>
+
+                <fieldset>    <!--  //agrupar campos de entrada, semantica e acessibilidade -->
+                    <legend>Rocketseat</legend>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="Nome" id="nome" autofocus required placeholder="Nome">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" 
+                            required 
+                            placeholder="Email"
+                            pattern=".+@rocketseat\.com.br">
+
+                        <label for="email_secundario">Email Secundário</label>
+                        <input type="email" name="email_secundario" id="email_secundario" disabled placeholder="Email">
+
+                            <datalist id="">
+                                <option value="green">Green</option>
+                                <option value="red">Red</option>
+                                <option value="orange">Orange</option>
+                            </datalist>
+
+                        <label for="nickname">Nickname</label>
+                        <input type="text" name="nickname" id="nickname" title="Nome pelo qual gostaria de ser chamado" placeholder="Nickname">
+
+                        <label for="password">Senha</label>        
+                        <input type="password" name="password" id="password" 
+                            required 
+                            minlength="4" maxlength="8"
+                            pattern="[0-9a-fA-F] {4,8}"
+                            title="Coloque no mínimo 4 caracteres e no máximo 8 caracteres e que contenha caracteres hexadecimais (0-9a-fA-F)"
+                            placeholder="Senha">
+
+                        <label for="linkedin">Linkedin</label>
+                        <input type="text" name="linkedin" id="linkedin"
+                            title="Campo para adicionar URL do perfil do Linkedin"
+                            placeholder="URL linkedin">
+
+                        <label for="site">Site</label>
+                        <input type="url" name="url" id="url" placeholder="URL do site"
+                        title="Site de pesquisa favorito"
+                        pattern=".*\.com\.br.*">
+
+                       
+                        <legend> Escolha sua Área de Interesses</legend>
+                              Frontend<input type = "checkbox" id= "checkbox" name="interesse" value = "interesse">
+                              Backend<input type = "checkbox" id= "checkbox" name="interesse" value = "interesse">
+                       
+                       <label for="file">Upload de Arquivo</label>
+                        <input type="file" name="file" id="file"
+                        placeholder="Arquivo apenas extensão .doc, .docx, .pdf"
+                        accept=".doc, .docx, .pdf">
+                    </fieldset><br>
+
+                    <p></p>
+
+                    <h4>Inputs menos Usados</h4>
+                    <fieldset class="menos_usados">
+
+                        <legend>Rocketseat</legend>
+                        <label for="week">Semana e Ano</label>
+                        <input type="week" name="" id="">
+
+                        <label for="time">Data</label>
+                        <input type="time" name="" id="">
+                        
+                        <label for="tel">Telefone</label>
+                        <input type="tel" name="" id="" placeholder="Telefone">
+                        
+                        <label for="search">Pesquisar</label>
+                        <input type="search" name="" id="" placeholder="Pesquisar">
+                        
+                        <label for="range">Range</label>
+                        <input type="range" name="range" id="range" min="1" max="9">
+                        
+                        <label for="sexo">Sexo</label>
+                        <input type="radio" name="Masculino" id="sexo">Masculino
+                        <input type="radio" name="Feminino" id="sexo">Feminino
+                        
+                        <label for="imagem">Imagem</label>
+                        <input type="image" src="" alt="Imagem aleatória">
+
+
+
+                    </fieldset>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
