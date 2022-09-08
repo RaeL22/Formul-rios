@@ -69,9 +69,10 @@
 
                        
                         <legend> Escolha sua Área de Interesses</legend>
-                              Frontend<input type = "checkbox" id= "checkbox" name="interesse" value = "interesse">
-                              Backend<input type = "checkbox" id= "checkbox" name="interesse" value = "interesse">
-                       
+                            <label for="frontend">Frontend</label>
+                            <input type="checkbox" name="frontend" id="frontend">
+                            <label for="backend">Backend</label>
+                            <input type="checkbox" name="backend" id="backend"><br>
                        <label for="file">Upload de Arquivo</label>
                         <input type="file" name="file" id="file"
                         placeholder="Arquivo apenas extensão .doc, .docx, .pdf"
@@ -106,7 +107,8 @@
                         <label for="imagem">Imagem</label>
                         <input type="image" src="" alt="Imagem aleatória">
 
-
+                        <input type="submit" value="Enviar" class="btn">
+                        <input type="reset" value="Limpar" class="btn">
 
                     </fieldset>
             </form>

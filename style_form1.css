@@ -48,8 +48,10 @@ fieldset label{
 }
 
 input:hover{
-    box-shadow: 2px 3px #333;
-    margin-left: .1em;
+    box-shadow: 1px 1px rgb(124, 6, 6);
+    box-shadow: 1px 1px rgb(168, 69, 177);
+    margin-right: 1em;
+    border-radius: 3px;
 }
 
 #checkbox, #sexo{
@@ -64,7 +66,6 @@ input:hover{
 
 fieldset input{
     border: none;
-    text-shadow: .2px .3px #bbbb;
     height: 31px;
     margin-left: 2em;
     letter-spacing: .1rem;
@@ -87,4 +88,9 @@ fieldset{
     display: flex;
     flex-direction: column; background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
 
+}
+
+.btn{
+    width: 41px;
+    height: 31px;
 }
