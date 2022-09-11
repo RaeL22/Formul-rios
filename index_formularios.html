@@ -145,10 +145,25 @@
     </section>
 <br>
     <h4>Formulário 3 - Dark Theme</h4>
+    <p><strong style="color: rgb(199, 15, 15);"> Treinando Optgroup </strong></p>
+
     <form action="" method="post" id="form-3">
         <fieldset>
-        <legend>Dark Theme</legend>
-    ....em construção
+
+            <label for="">Escolha um ou mais Pets de sua preferencia:</label>
+
+            <select name="pets" id="pets" multiple size="4">
+                <optgroup label="4-patas">
+                    <option value="dog">Cachorro</option>
+                    <option value="cat">Gato</option>
+                    <option value="hamster" disabled>Hamster</option>
+                </optgroup>
+                <optgroup label="Voadores">
+                    <option value="passaro" disabled>Beia-flor</option>
+                    <option value="aguia">Águia</option>
+                    <option value="arara">Arara</option>
+                </optgroup>
+            </select>
     </form>
 </fieldset>
     
