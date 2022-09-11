@@ -167,6 +167,7 @@
     </form>
 </fieldset>
 <fieldset class="search-id">
+    <legend>Pesquisar por ID</legend>
     <form action="">
         <label for="">Pesquisar pelo ID</label>
         <input type="search" name="id" id="id" size="4"
@@ -176,7 +177,20 @@
     </form>
 </fieldset>
 
+<fieldset>
+    <datalist id="searchterms">
+        <option>Windows</option>
+        <option>Mac</option>
+        <option>Linux</option>
+    </datalist>
 
+    <legend>Pesquisar por Texto</legend>
+    <form action="">
+        <input type="search" name="q" id="" list="searchterms" placeholder="Digite seu termo de busca" size="29"
+        aria-label="Campo de pesquisa: Digite seu termo de busca">
+        <button style="color: red; font-weight: bold">Pesquisar</button>
+    </form>
+</fieldset>
 
     
 </body>
