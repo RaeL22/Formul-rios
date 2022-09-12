@@ -196,14 +196,20 @@
     <legend>Números</legend>
     <form action="">
         <label for="number">Digite seu CPF:</label>
-        <input type="number" name="" id="" min="" max="" placeholder="Apenas números" size=""><br>
+        <input type="number" name="number" id="" min="" max="11" placeholder="000.000.000-00" size="12" style="width: 21;"><br>
         <label for="date">Informe a data:</label>
         <input type="date" name="" id="" value="yyyy-mm-dd"><br>
+        <label for="weeb">Informe a semana:</label>
         <input type="week" name="" id="" disabled>*desabilitado<br>
+        <label for="datetime-loal">Informe data e local:</label>
         <input type="datetime-local" name="" id="" disabled>*desabilitado<br>
+        <label for="month">Informe o mês:</label>
         <input type="month" disabled>*desabilitado<br>
+        <label for="time">Informe a hora:</label>
         <input type="time" name="" id=""><br>
         <input type="range" name="" id="" min="-2" max="4" step="2" value="2"><br>
+        <label for="range">Defina o range</label>
+        <input type="range" name="" id="" min="-2" max="4" step="2" value="2"><br><br>
 
         <button>Enviar</button>
     </form>
